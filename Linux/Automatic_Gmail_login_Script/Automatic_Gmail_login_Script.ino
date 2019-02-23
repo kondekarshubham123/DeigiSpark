@@ -13,16 +13,16 @@ void loop() {
   DigiKeyboard.delay(10000);
   DigiKeyboard.sendKeyStroke(KEY_Q, MOD_GUI_LEFT);
   DigiKeyboard.sendKeyStroke(KEY_1, MOD_GUI_LEFT);
-  DigiKeyboard.delay(2000);
-  DigiKeyboard.sendKeyStroke(KEY_T, MOD_CONTROL_LEFT);
-  DigiKeyboard.delay(2000);
-  DigiKeyboard.print("mail.google.com");
+  DigiKeyboard.delay(3000);
+  DigiKeyboard.sendKeyStroke(KEY_P, MOD_CONTROL_LEFT | MOD_SHIFT_LEFT);
+  DigiKeyboard.delay(3000);
+  DigiKeyboard.print("https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(5000);
-  DigiKeyboard.print(" ");//Enter your E-mail ID
+  DigiKeyboard.print(" emailID ");//Enter your E-mail ID
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(5000);
-  DigiKeyboard.print(" ");//Enter your Password
+  DigiKeyboard.print("password ");//Enter your Password
   DigiKeyboard.sendKeyStroke(KEY_ENTER);//
   
   for (;;){ }//Empty
