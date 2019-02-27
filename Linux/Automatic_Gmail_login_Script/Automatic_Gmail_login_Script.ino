@@ -11,9 +11,9 @@ void loop() {
   // prevent missing the first character after a delay:
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.delay(10000);
-  DigiKeyboard.sendKeyStroke(KEY_Q, MOD_GUI_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_1, MOD_GUI_LEFT);
-  DigiKeyboard.delay(3000);
+  DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT);
+  DigiKeyboard.print(0, MOD_GUI_LEFT);
+  DigiKeyboard.delay(6000);
   DigiKeyboard.sendKeyStroke(KEY_P, MOD_CONTROL_LEFT | MOD_SHIFT_LEFT);
   DigiKeyboard.delay(3000);
   DigiKeyboard.print("https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
